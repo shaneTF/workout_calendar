@@ -1,17 +1,22 @@
 import "./App.css";
 
-import TESTWORKOUTS from "./data/TESTWORKOUTS";
+import TESTWORKOUTS from "./data/testWorkouts.tsx";
+
+import Column from "./Components/calendar_columns.tsx";
+import { useState } from "react";
 
 function App() {
+  const [cards, setCards] = useState(TESTWORKOUTS);
+
   return (
     <>
-      <main className="flex flex-col min-h-screen items-center space-y-4">
-        <h1 className="text-xl font-bold mt-4">Workouts</h1>
-        {TESTWORKOUTS.map((workout, index) => (
-          <div className="relative flex border rounded p-2 space-x-3 bg-gray-100">
-            {workout.name}
-          </div>
-        ))}
+      <main>
+        <Column
+          title="Monday"
+          column="monday"
+          cards={cards}
+          setCards={setCards}
+        />
       </main>
     </>
   );
