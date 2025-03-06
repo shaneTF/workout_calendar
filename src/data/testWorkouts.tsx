@@ -2,37 +2,37 @@ const TESTWORKOUTS = [
   {
     id: 1,
     name: "Arms: Pull Downs",
-    Description:
+    description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, iste",
-    Column: "Monday",
+    column: "monday",
   },
   {
     id: 2,
     name: "Arms: Push Ups",
-    Description:
+    description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, iste",
-    Column: "Tuesday",
+    column: "tuesday",
   },
   {
     id: 3,
     name: "Legs: PR push",
-    Description:
+    description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, iste",
-    Column: "Wednesday",
+    column: "wednesday",
   },
   {
     id: 4,
     name: "Legs: Squats",
-    Description:
+    description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, iste",
-    Column: "Thursday",
+    column: "thursday",
   },
   {
     id: 5,
     name: "Cardio: Treadmill Run",
-    Description:
+    description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, iste",
-    Column: "Friday",
+    column: "friday",
   },
 ];
 

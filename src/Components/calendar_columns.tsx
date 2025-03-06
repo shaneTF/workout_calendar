@@ -1,34 +1,13 @@
-import { JSX } from "react/jsx-runtime";
-import Card from "./card";
+import { cardDef } from "../App";
 
-function Column({
-  title,
-  column,
-  cards,
-  setCards,
-}: {
-  title: string;
-  column: string;
-  cards: any;
-  setCards: any;
-}) {
-  const filteredCards = cards.filter(
-    (c: { column: string }) => (c.column = column)
-  );
+function Column({ column, cards }: { column: string; cards: cardDef[] }) {
+  const filteredCards = cards.filter((c) => c.column === column);
 
   return (
     <div>
-      {filteredCards.map(
-        (
-          c: JSX.IntrinsicAttributes & {
-            title: string;
-            id: number;
-            column: string;
-          }
-        ) => {
-          return <Card key={c.id} {...c} />;
-        }
-      )}
+      {filteredCards.map((c) => {
+        return <div>{c.name}</div>;
+      })}
     </div>
   );
 }

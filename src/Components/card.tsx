@@ -1,15 +1,15 @@
 function Card({
-  title,
+  name,
   id,
   column,
 }: {
-  title: string;
+  name: string;
   id: number;
   column: string;
 }) {
   return (
     <div>
-      <p>{title}</p>
+      <p>{name}</p>
     </div>
   );
 }
