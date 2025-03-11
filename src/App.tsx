@@ -17,12 +17,12 @@ function App() {
 
   return (
     <>
-      <main>
-        <Column column="monday" cards={cards} />
-        <Column column="tuesday" cards={cards} />
-        <Column column="wednesday" cards={cards} />
-        <Column column="thursday" cards={cards} />
-        <Column column="friday" cards={cards} />
+      <main className="flex h-full w-full gap-3 p-12 overflow-scroll">
+        <Column title="Monday" column="monday" cards={cards} />
+        <Column title="Tuesday" column="tuesday" cards={cards} />
+        <Column title="Wednesday" column="wednesday" cards={cards} />
+        <Column title="Thursday" column="thursday" cards={cards} />
+        <Column title="Friday" column="friday" cards={cards} />
       </main>
     </>
   );
