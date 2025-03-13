@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <main className="flex h-full w-full gap-3 p-12 overflow-scroll">
+      <main className="flex h-screen w-full gap-3 p-12 overflow-scroll bg-stone-900">
         <Column title="Monday" column="monday" cards={cards} />
         <Column title="Tuesday" column="tuesday" cards={cards} />
         <Column title="Wednesday" column="wednesday" cards={cards} />

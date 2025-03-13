@@ -14,13 +14,13 @@ function Column({
   return (
     <>
       <div className="w-56 shrink-0">
-        <div className="mb-3 flex items-center justify-between">
+        <div className="mb-3 flex items-center justify-between text-white">
           <h3>{title}</h3>
         </div>
 
         <div className="h-full w-full">
           {filteredCards.map((c) => {
-            return <div>{c.name}</div>;
+            return <div className="text-white">{c.name}</div>;
           })}
         </div>
       </div>
