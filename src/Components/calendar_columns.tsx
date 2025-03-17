@@ -20,7 +20,14 @@ function Column({
 
         <div className="h-full w-full">
           {filteredCards.map((c) => {
-            return <div className="text-white">{c.name}</div>;
+            return (
+              <div
+                draggable
+                className="text-white border border-gray-500 rounded-md p-3 hover:cursor-pointer bg-stone-800"
+              >
+                {c.name}
+              </div>
+            );
           })}
         </div>
       </div>
