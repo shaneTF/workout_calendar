@@ -14,7 +14,7 @@ function Column({
   return (
     <>
       <div className="w-56 shrink-0">
-        <div className="mb-3 flex items-center justify-between text-white">
+        <div className="mb-3 flex items-center justify-center text-white">
           <h3>{title}</h3>
         </div>
 
